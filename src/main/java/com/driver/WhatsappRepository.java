@@ -70,8 +70,8 @@ public class WhatsappRepository {
     }
     public int createMessage(String content){
        this.messageId++;
-       Date date = new Date();
-       Message message = new Message(this.messageId,content,date);
+       //Date date = new Date();
+       Message message = new Message(this.messageId,content);
        return this.messageId;
     }
 
